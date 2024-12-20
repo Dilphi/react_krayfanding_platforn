@@ -1,0 +1,122 @@
+/* Общий стиль для body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Стили контейнера */
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Заголовки */
+h1, h2 {
+  color: #0056b3;
+  text-align: center;
+}
+
+/* Общий стиль кнопок */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-nav{
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Поля ввода */
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Карточки для списка товаров */
+.card {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.info-p{
+  text-align: center;
+}
+
+.card h3 {
+  color: #333;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+/* Ссылка в списке навигации */
+.nav-link {
+  text-decoration: none;
+  color: #007bff;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Навигация */
+nav {
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Стиль для основной кнопки на главной странице */
+.main-btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background-color: #0056b3;
+}
