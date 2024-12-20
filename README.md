@@ -62,7 +62,8 @@ export default tseslint.config({
 
 1. Клонирование репозитория:
    ```bash
-   git clone [URL-репозитория]
+   git clone https://github.com/Dilphi/react_krayfanding_platforn.git
+   cd react_krayfanding_platforn
    ```
 
 2. Установка зависимостей:
