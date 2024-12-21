@@ -31,10 +31,10 @@ button {
   transition: background-color 0.3s ease;
 }
 
-.btn-nav{
+.btn-nav {
   display: flex;
-  align-items:center;
-  justify-content:space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 button:hover {
@@ -53,70 +53,65 @@ textarea {
   font-size: 16px;
 }
 
-/* Карточки для списка товаров */
-.card {
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: white;
-}
-
-.info-p{
+.info-p {
   text-align: center;
 }
 
-.card h3 {
-  color: #333;
+/* ===== Медиа-запросы ===== */
+
+/* Для экранов шириной до 768px */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .btn-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
-.card p {
-  margin: 5px 0;
+/* Для экранов шириной до 576px */
+@media (max-width: 576px) {
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .info-p {
+    font-size: 14px;
+  }
 }
 
-/* Ссылка в списке навигации */
-.nav-link {
-  text-decoration: none;
-  color: #007bff;
-  margin-right: 15px;
-  font-size: 18px;
-}
+/* Для экранов шириной до 400px */
+@media (max-width: 400px) {
+  h1, h2 {
+    font-size: 18px;
+  }
 
-.nav-link:hover {
-  text-decoration: underline;
-}
+  button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
 
-/* Навигация */
-nav {
-  text-align: center;
-  padding: 10px;
-  background-color: #007bff;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Стиль для основной кнопки на главной странице */
-.main-btn {
-  display: inline-block;
-  margin: 20px auto;
-  padding: 15px 30px;
-  background-color: #007bff;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.main-btn:hover {
-  background-color: #0056b3;
+  .info-p {
+    font-size: 12px;
+  }
 }
